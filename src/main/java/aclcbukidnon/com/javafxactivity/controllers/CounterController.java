@@ -15,6 +15,10 @@ public class CounterController {
 
     @FXML
     protected void onPlusClick() {
+        var countText = labelCount.getText();
+        var countValue = Integer.parseInt(countText);
+        countValue++;
+        labelCount.setText(countValue+ "");
 
     }
 
